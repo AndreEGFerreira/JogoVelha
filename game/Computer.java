@@ -24,7 +24,7 @@ public class Computer extends Player{
 
     @Override
     public void play(Board board){
-        Try(board);
+        tryThisPlay(board);
         board.setPosition(attempt, player);
     }
 
@@ -33,7 +33,7 @@ public class Computer extends Player{
      * @param board
      */
     @Override
-    public void Try(Board board){
+    public void tryThisPlay(Board board){
             do{
                 attempt[0] = (int) (1 + (Math.random() * (4 - 1)));
                 attempt[1] = (int) (1 + (Math.random() * (4 - 1)));

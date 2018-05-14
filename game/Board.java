@@ -141,9 +141,7 @@ public class Board {
         diagonal2=true;
         }
 
-        if(linha1 && linha2 && linha3 && coluna1 && coluna2 && coluna3 && diagonal1 && diagonal2)
-            return true;
-        return false;
+        return(linha1 && linha2 && linha3 && coluna1 && coluna2 && coluna3 && diagonal1 && diagonal2);
 
     }
 
