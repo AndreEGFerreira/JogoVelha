@@ -9,12 +9,7 @@
  * @author Administrador
  */
 
-import java.util.Random;
-import java.lang.Math;
-
 public class Computer extends Player{
-
-    Random rand;
 
     public Computer(int player){
         super(player);

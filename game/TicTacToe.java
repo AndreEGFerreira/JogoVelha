@@ -23,7 +23,7 @@ public class TicTacToe {
         board = new Board();
         startPlayers();
 
-        while( Play() );
+        while( play() );
     }
 
     public void startPlayers(){
@@ -59,10 +59,10 @@ public class TicTacToe {
         return option;
     }
 
-    public boolean Play(){
+    public boolean play(){
         board.showBoard();
 
-        if(board.checkVelha() == false){
+        if(!board.checkVelha()){
             if(won() == 0 ){
                 System.out.println("----------------------");
                 System.out.println("\nTurno "+turn);
